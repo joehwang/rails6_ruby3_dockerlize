@@ -27,3 +27,14 @@
 
 # Ignore master key for decrypting credentials and more.
 /config/master.key
+
+!/mongo_data/.keep
+/mongo_data/*
+
+!/mysql_data/.keep
+/mysql_data/*
+
+/rails_app/*
+!/rails_app/.keep
+!/rails_app/GEMFILE
+!/rails_app/README.md

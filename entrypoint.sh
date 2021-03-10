@@ -1,7 +1,6 @@
 #!/bin/bash
 CONTAINER_ALREADY_STARTED="config.ru"
-if [ ! -e $CONTAINER_ALREADY_STARTED ]; then
-  echo "xxxxx"
+if [ ! -e $CONTAINER_ALREADY_STARTED ]; then  
   echo "-- First container startup --"
   # YOUR_JUST_ONCE_LOGIC_HERE
   bundle init && \
@@ -12,7 +11,7 @@ if [ ! -e $CONTAINER_ALREADY_STARTED ]; then
   rails webpacker:install 
 else
   echo "-- Not first container startup --"
-  rm -f tmp/pids/server.pid
+  rm -f tmp/pids/serv.pid
   bundle install
-  /bin/bash
+  #/bin/bash
 fi
