@@ -52,6 +52,7 @@ services:
       EDITOR: "vim"
       MONGO_INITDB_ROOT_USERNAME: root
       MONGO_INITDB_ROOT_PASSWORD: example
+      MYSQL_ROOT_PWD: root_password
     volumes:
       - ./rails_app:/sample_app
     ports:
